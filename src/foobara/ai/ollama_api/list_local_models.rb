@@ -3,10 +3,10 @@ require_relative "base_command"
 module Foobara
   module Ai
     module OllamaApi
-      class ListRunningModels < BaseCommand
-        result [RunningModel]
+      class ListLocalModels < BaseCommand
+        result [LocalModel]
 
-        path "ps"
+        path "tags"
 
         def build_result
           response_body["models"]

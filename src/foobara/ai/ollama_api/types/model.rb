@@ -10,8 +10,6 @@ module Foobara
           size :integer, :required
           digest :string, :required # TODO: create a type for this type of hash?
           details Details, :required
-          expires_at :datetime, :required
-          size_vram :integer, :required
         end
       end
     end
