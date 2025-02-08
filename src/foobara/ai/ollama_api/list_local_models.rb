@@ -3,7 +3,7 @@ require_relative "base_command"
 module Foobara
   module Ai
     module OllamaApi
-      class ListLocalModels < BaseCommand
+      class ListLocalModels < BaseGetCommand
         result [LocalModel]
 
         path "tags"
