@@ -80,7 +80,7 @@ GEM
       foobara-files-generator
     foobara-files-generator (0.0.5)
       foobara
-    foobara-http-api-command (0.0.2)
+    foobara-http-api-command (0.0.3)
       foobara
     foobara-local-files-crud-driver-generator (0.0.3)
       foobara

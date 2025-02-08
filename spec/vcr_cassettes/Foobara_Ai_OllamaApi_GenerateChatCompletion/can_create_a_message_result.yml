@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:11434/api/chat
+    body:
+      encoding: UTF-8
+      string: '{"model":"llama3:8b","messages":[{"role":"user","content":"What is
+        the PH of honey?"}],"stream":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:11434
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 08 Feb 2025 18:31:06 GMT
+      Content-Length:
+      - '1299'
+    body:
+      encoding: UTF-8
+      string: '{"model":"llama3:8b","created_at":"2025-02-08T18:31:06.198770665Z","message":{"role":"assistant","content":"A
+        sweet question!\n\nThe pH of honey can vary depending on several factors,
+        such as the type of flowers the bees collect nectar from, the soil quality,
+        and the processing methods used. However, in general, honey has a relatively
+        low pH level.\n\nHere are some typical pH ranges for different types of honey:\n\n*
+        Raw honey: 3.2 to 4.5 (slightly acidic)\n* Processed honey: 4.0 to 6.0 (neutral
+        to slightly alkaline)\n* Manuka honey: 3.5 to 4.5 (slightly acidic)\n\nFor
+        comparison, the pH scale ranges from 0 to 14, with:\n\n* Acidic values below
+        7\n* Neutral values around 7 (like pure water)\n* Alkaline values above 7\n\nHoney''s
+        acidity comes from the presence of compounds like gluconic acid and other
+        organic acids, which are formed during the ripening process in the honeycomb.
+        These acids help to preserve the honey and prevent spoilage.\n\nIt''s worth
+        noting that some types of honey, such as Manuka honey, have a slightly higher
+        pH level due to the unique composition of their nectar source."},"done_reason":"stop","done":true,"total_duration":59172944116,"load_duration":5341590273,"prompt_eval_count":17,"prompt_eval_duration":1141000000,"eval_count":244,"eval_duration":52686000000}'
+  recorded_at: Sat, 08 Feb 2025 18:31:06 GMT
+recorded_with: VCR 6.3.1
