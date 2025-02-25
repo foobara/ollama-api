@@ -5,7 +5,7 @@ module Foobara
     module OllamaApi
       class GenerateChatCompletion < BaseCommand
         inputs do
-          model :string, :required # TODO: make a model type
+          model :model, :required
           messages [Message], :required
         end
 
