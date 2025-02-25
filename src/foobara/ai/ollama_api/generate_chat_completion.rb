@@ -1,9 +1,9 @@
-require_relative "base_post_command"
+require_relative "base_command"
 
 module Foobara
   module Ai
     module OllamaApi
-      class GenerateChatCompletion < BasePostCommand
+      class GenerateChatCompletion < BaseCommand
         inputs do
           model :string, :required # TODO: make a model type
           messages [Message], :required
@@ -11,7 +11,8 @@ module Foobara
 
         result ChatCompletion
 
-        path "chat"
+        path "/chat"
+        http_method :post
 
         def build_request_body
           self.request_body = inputs.merge(stream: false)

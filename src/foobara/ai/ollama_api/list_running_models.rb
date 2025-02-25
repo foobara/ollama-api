@@ -1,12 +1,12 @@
-require_relative "base_get_command"
+require_relative "base_command"
 
 module Foobara
   module Ai
     module OllamaApi
-      class ListRunningModels < BaseGetCommand
+      class ListRunningModels < BaseCommand
         result [RunningModel]
 
-        path "ps"
+        path "/ps"
 
         def build_result
           response_body["models"]
