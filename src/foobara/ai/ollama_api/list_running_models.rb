@@ -4,7 +4,7 @@ module Foobara
   module Ai
     module OllamaApi
       class ListRunningModels < BaseCommand
-        result [RunningModel]
+        result [Types::RunningModel]
 
         path "/ps"
 

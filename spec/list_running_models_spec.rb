@@ -7,7 +7,7 @@ RSpec.describe Foobara::Ai::OllamaApi::ListRunningModels do
   it "can create a message result", vcr: { record: :none } do
     expect(outcome).to be_success
     expect(result).to be_an(Array)
-    expect(result).to all be_a(Foobara::Ai::OllamaApi::Model)
+    expect(result).to all be_a(Foobara::Ai::OllamaApi::Types::Model)
     expect(result.first.details.families.first).to be_a(String)
   end
 end

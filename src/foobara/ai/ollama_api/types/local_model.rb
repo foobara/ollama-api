@@ -1,9 +1,13 @@
+require_relative "model"
+
 module Foobara
   module Ai
     module OllamaApi
-      class LocalModel < OllamaApi::Model
-        attributes do
-          modified_at :datetime, :required
+      module Types
+        class LocalModel < Model
+          attributes do
+            modified_at :datetime, :required
+          end
         end
       end
     end

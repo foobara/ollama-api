@@ -4,7 +4,7 @@ module Foobara
   module Ai
     module OllamaApi
       class ListLocalModels < BaseCommand
-        result [LocalModel]
+        result [Types::LocalModel]
 
         path "/tags"
 

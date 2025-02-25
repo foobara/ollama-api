@@ -6,10 +6,10 @@ module Foobara
       class GenerateChatCompletion < BaseCommand
         inputs do
           model :model, :required
-          messages [Message], :required
+          messages [Types::Message], :required
         end
 
-        result ChatCompletion
+        result Types::ChatCompletion
 
         path "/chat"
         http_method :post
