@@ -13,6 +13,7 @@ module Foobara
 
         path "/chat"
         http_method :post
+        http_timeout 600
 
         def build_request_body
           self.request_body = inputs.merge(stream: false)

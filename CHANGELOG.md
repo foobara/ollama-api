@@ -1,3 +1,7 @@
+## [0.0.3] - 2025-02-27
+
+- Increase timeout to 10 minutes
+
 ## [0.0.2] - 2025-02-25
 
 - Add a ModelEnum as :model
