@@ -8,7 +8,7 @@ module Foobara
         ModelEnum = Foobara::Enumerated.make_module(model_list)
       end
 
-      foobara_register_type(:model, :string, one_of: Types::ModelEnum)
+      foobara_register_type(:model_enum, :string, one_of: Types::ModelEnum)
     end
   end
 end
