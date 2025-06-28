@@ -1,3 +1,7 @@
+## [0.0.5] - 2025-06-27
+
+- Add temperature input to GenerateChatCompletion
+
 ## [0.0.4] - 2025-03-01
 
 - Rename :model to :model_enum to avoid collision with Model in filesystems that are case-insensitive

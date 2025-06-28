@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"model":"llama3:8b","messages":[{"role":"user","content":"What is
-        the PH of honey?"}],"stream":false}'
+        the PH of honey?"}],"stream":false,"options":{"temperature":0.0}}'
     headers:
       Content-Type:
       - application/json
@@ -16,8 +16,6 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
-      Host:
-      - localhost:11434
   response:
     status:
       code: 200
@@ -26,24 +24,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 08 Feb 2025 18:31:06 GMT
+      - Sat, 28 Jun 2025 04:14:24 GMT
       Content-Length:
-      - '1299'
+      - '1682'
     body:
       encoding: UTF-8
-      string: '{"model":"llama3:8b","created_at":"2025-02-08T18:31:06.198770665Z","message":{"role":"assistant","content":"A
+      string: '{"model":"llama3:8b","created_at":"2025-06-28T04:14:24.642830704Z","message":{"role":"assistant","content":"A
         sweet question!\n\nThe pH of honey can vary depending on several factors,
-        such as the type of flowers the bees collect nectar from, the soil quality,
-        and the processing methods used. However, in general, honey has a relatively
-        low pH level.\n\nHere are some typical pH ranges for different types of honey:\n\n*
-        Raw honey: 3.2 to 4.5 (slightly acidic)\n* Processed honey: 4.0 to 6.0 (neutral
-        to slightly alkaline)\n* Manuka honey: 3.5 to 4.5 (slightly acidic)\n\nFor
-        comparison, the pH scale ranges from 0 to 14, with:\n\n* Acidic values below
-        7\n* Neutral values around 7 (like pure water)\n* Alkaline values above 7\n\nHoney''s
-        acidity comes from the presence of compounds like gluconic acid and other
-        organic acids, which are formed during the ripening process in the honeycomb.
-        These acids help to preserve the honey and prevent spoilage.\n\nIt''s worth
-        noting that some types of honey, such as Manuka honey, have a slightly higher
-        pH level due to the unique composition of their nectar source."},"done_reason":"stop","done":true,"total_duration":59172944116,"load_duration":5341590273,"prompt_eval_count":17,"prompt_eval_duration":1141000000,"eval_count":244,"eval_duration":52686000000}'
-  recorded_at: Sat, 08 Feb 2025 18:31:06 GMT
+        such as the type of flowers the bees gather nectar from, the region where
+        the honey is produced, and the processing methods used.\n\nIn general, the
+        pH of honey is slightly acidic to neutral. The typical pH range for honey
+        is between 3.2 and 4.5, with an average pH value around 3.9-4.0 [1]. This
+        acidity comes from the presence of organic acids, such as gluconic acid, citric
+        acid, and malic acid, which are naturally present in honey.\n\nFor comparison,
+        here are some common substances and their pH levels:\n\n* Lemon juice: pH
+        2.0\n* Vinegar: pH 2.4\n* Orange juice: pH 3.5\n* Water: pH 7.0 (neutral)\n*
+        Milk: pH 6.5-7.0\n\nSo, honey is generally more acidic than water and milk,
+        but less acidic than lemon juice or vinegar.\n\nIt''s worth noting that some
+        types of honey, such as Manuka honey from New Zealand, may have a slightly
+        higher pH due to the presence of certain compounds like methylglyoxal [2].\n\nOverall,
+        the pH of honey is an important factor in its quality and stability, as it
+        can affect the growth of bacteria and other microorganisms.\n\nReferences:\n\n[1]
+        White et al. (2017). Honey: A review of its composition, properties, and uses.
+        Journal of Food Science, 82(5), S1448-S1459.\n\n[2] Weston et al. (2013).
+        The pH of Manuka honey. Journal of Apicultural Research, 52(1), 15-20."},"done_reason":"stop","done":true,"total_duration":579168209073,"load_duration":5401885674,"prompt_eval_count":17,"prompt_eval_duration":21730375963,"eval_count":358,"eval_duration":552034145799}'
+  recorded_at: Sat, 28 Jun 2025 04:14:24 GMT
 recorded_with: VCR 6.3.1

@@ -7,6 +7,9 @@ module Foobara
         inputs do
           model :model_enum, :required
           messages [Types::Message], :required
+          options do
+            temperature :float
+          end
         end
 
         result Types::ChatCompletion
@@ -16,6 +19,16 @@ module Foobara
         http_timeout 600
 
         def build_request_body
+          inputs = {
+            model:,
+            messages:,
+            stream: false
+          }
+
+          if options && !options.empty?
+            inputs[:options] = options
+          end
+
           self.request_body = inputs.merge(stream: false)
         end
       end

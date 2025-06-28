@@ -3,7 +3,11 @@ RSpec.describe Foobara::Ai::OllamaApi::GenerateChatCompletion do
     {
       model:,
       messages:
-    }
+    }.tap do |hash|
+      if temperature
+        hash[:options] = { temperature: }
+      end
+    end
   end
   let(:model) { "llama3:8b" }
   let(:messages) do
@@ -11,6 +15,7 @@ RSpec.describe Foobara::Ai::OllamaApi::GenerateChatCompletion do
       { role: "user", content: "What is the PH of honey?" }
     ]
   end
+  let(:temperature) { 0 }
 
   let(:command) { described_class.new(inputs) }
   let(:outcome) { command.run }
