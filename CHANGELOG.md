@@ -1,3 +1,7 @@
+## [1.0.0] - 2025-07-09
+
+- Add OllamaApi.default_llm_model
+
 ## [0.0.5] - 2025-06-27
 
 - Add temperature input to GenerateChatCompletion
