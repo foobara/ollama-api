@@ -1,4 +1,8 @@
 RSpec.describe Foobara::Ai::OllamaApi::ListLocalModels do
+  before do
+    Foobara::CachedCommand.reset_all
+  end
+
   let(:command) { described_class.new }
   let(:outcome) { command.run }
   let(:result) { outcome.result }
