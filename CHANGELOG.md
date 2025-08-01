@@ -1,3 +1,7 @@
+## [1.0.2] - 2025-08-01
+
+- Fix incorrect ruby version dependency preventing bundle updates
+
 ## [1.0.1] - 2025-07-21
 
 - Add CachedCommand for List*Models commands like in AnthropicApi and OpenAiApi
