@@ -5,7 +5,12 @@ ruby Foobara::OllamaApi::MINIMUM_RUBY_VERSION
 
 gemspec
 
-# gem "foobara-cached-command", path: "../cached-command"
+gem "foobara", path: "#{__dir__}/../foobara"
+gem "foobara-auth", path: "#{__dir__}/../auth"
+gem "foobara-auth-http", path: "#{__dir__}/../auth-http"
+gem "foobara-cached-command", path: "#{__dir__}/../cached-command"
+gem "foobara-http-command-connector", path: "#{__dir__}/../http-command-connector"
+gem "foobara-rack-connector", path: "#{__dir__}/../rack-connector"
 
 gem "foobara-dotenv-loader", "< 2.0.0"
 
