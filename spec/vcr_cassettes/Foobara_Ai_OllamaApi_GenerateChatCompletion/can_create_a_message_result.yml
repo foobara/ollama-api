@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:11434/api/chat
+    uri: <SCRUBBED_OLLAMA_API_URL>/api/chat
     body:
       encoding: UTF-8
       string: '{"model":"llama3:8b","messages":[{"role":"user","content":"What is

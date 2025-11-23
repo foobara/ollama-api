@@ -22,6 +22,8 @@ Dir["#{__dir__}/support/**/*.rb"].each { |f| require f }
 
 require "foobara/spec_helpers/all"
 
+# Make sure to delete tmp/ if rerecording.
 VCR.use_cassette("list_models", record: :none) do
   require_relative "../boot/finish"
 end
+# raise "Just rerecording the list_models cassette, no need to proceed"

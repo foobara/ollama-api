@@ -1,3 +1,7 @@
+## [1.0.3] - 2025-11-23
+
+- Add support for an API key
+
 ## [1.0.2] - 2025-08-01
 
 - Fix incorrect ruby version dependency preventing bundle updates

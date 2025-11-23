@@ -6,6 +6,7 @@ ruby Foobara::OllamaApi::MINIMUM_RUBY_VERSION
 gemspec
 
 # gem "foobara", path: "../foobara"
+# gem "foobara-http-api-command", path: "../http-api-command"
 
 gem "foobara-dotenv-loader", "< 2.0.0"
 

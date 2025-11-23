@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:11434/api/ps
+    uri: <SCRUBBED_OLLAMA_API_URL>/api/ps
     body:
       encoding: US-ASCII
       string: ''

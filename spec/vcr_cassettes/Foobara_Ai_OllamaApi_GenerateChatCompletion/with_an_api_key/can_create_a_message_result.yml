@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<SCRUBBED_OLLAMA_API_URL>/api/chat"
+    body:
+      encoding: UTF-8
+      string: '{"model":"qwen3-coder:30b","messages":[{"role":"user","content":"What
+        is the PH of honey?"}],"stream":false,"options":{"temperature":0.0}}'
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - abc123
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 23 Nov 2025 21:57:17 GMT
+      Content-Length:
+      - '886'
+    body:
+      encoding: UTF-8
+      string: '{"model":"qwen3-coder:30b","created_at":"2025-11-23T21:57:17.565354407Z","message":{"role":"assistant","content":"Honey
+        typically has a pH range of **3.2 to 4.5**, making it mildly acidic. Most
+        honey falls around **pH 3.5 to 3.9**.\n\nThis acidity is due to:\n- Natural
+        organic acids like gluconic acid (produced by bees)\n- The presence of various
+        organic compounds\n- The natural fermentation process that occurs during honey
+        production\n\nThe exact pH can vary slightly depending on:\n- The floral source
+        of the nectar\n- Geographic location\n- Processing methods\n- Age of the honey\n\nThis
+        mild acidity is one reason why honey has natural antimicrobial properties
+        and helps preserve food."},"done_reason":"stop","done":true,"total_duration":20609812746,"load_duration":19113691915,"prompt_eval_count":15,"prompt_eval_duration":483809540,"eval_count":132,"eval_duration":1010154697}'
+  recorded_at: Sun, 23 Nov 2025 21:57:17 GMT
+recorded_with: VCR 6.3.1
