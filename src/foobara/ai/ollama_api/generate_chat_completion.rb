@@ -31,6 +31,10 @@ module Foobara
 
           self.request_body = inputs.merge(stream: false)
         end
+
+        def build_result
+          Types::ChatCompletion.new(response_body, ignore_unexpected_attributes: true)
+        end
       end
     end
   end

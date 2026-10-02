@@ -15,7 +15,9 @@ module Foobara
         path "/tags"
 
         def build_result
-          response_body["models"]
+          response_body["models"].map do |model_data|
+            Types::LocalModel.new(model_data, ignore_unexpected_attributes: true)
+          end
         end
       end
     end
