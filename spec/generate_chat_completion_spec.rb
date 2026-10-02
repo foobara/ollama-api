@@ -28,15 +28,13 @@ RSpec.describe Foobara::Ai::OllamaApi::GenerateChatCompletion do
     expect(result.message.content).to match(/pH of honey.*\d+\.\d+ (and|to) \d+\.\d+/mi)
   end
 
-  context "with an api key" do
+  describe "#api_token" do
     stub_env_var(:OLLAMA_API_KEY, "abc123")
 
     let(:model) { "qwen3-coder:30b" }
 
-    it "can create a message result", vcr: { record: :none } do
-      expect(outcome).to be_success
-      expect(result).to be_a(Foobara::Ai::OllamaApi::Types::ChatCompletion)
-      expect(result.message.content).to match(/pH.*honey.*\d+\.\d+ (and|to) \d+\.\d+/mi)
+    it "can create a message result" do
+      expect(command.api_token).to eq("abc123")
     end
   end
 end

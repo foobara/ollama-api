@@ -8,6 +8,8 @@ RSpec.describe Foobara::Ai::OllamaApi::ListRunningModels do
   let(:result) { outcome.result }
   let(:errors) { outcome.errors }
 
+  # NOTE: Make sure you have a running model!
+  # You can do this with something like `ollama run llama:8b`
   it "can create a message result", vcr: { record: :none } do
     expect(outcome).to be_success
     expect(result).to be_an(Array)

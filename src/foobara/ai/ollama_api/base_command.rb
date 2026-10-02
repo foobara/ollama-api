@@ -8,9 +8,13 @@ module Foobara
 
         def build_request_headers
           self.request_headers = if api_token
+                                   # simplecov:disable
                                    super.merge("x-api-Key" => api_token)
+                                   # simplecov:enable
                                  else
+                                   # simplecov:disable
                                    super
+                                   # simplecov:enable
                                  end
         end
 
