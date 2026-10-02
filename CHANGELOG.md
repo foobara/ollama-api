@@ -1,3 +1,7 @@
+## [1.0.4] - 2026-10-02
+
+- Don't fail just because Ollama added a new attribute to their API
+
 ## [1.0.3] - 2025-11-23
 
 - Add support for an API key
